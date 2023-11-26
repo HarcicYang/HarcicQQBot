@@ -1,5 +1,6 @@
 # HarcicQQBot插件开发指南
 
+**我们希望您能够将插件开源或仅上传GitHub**
 
 以下是一个示例插件（test_plugin.py）
 ~~~python
