@@ -119,4 +119,4 @@ class Hypixel:  # 查询Hypixel玩家信息 https://api.hypixel.net/
   - 发送群消息 .alert {group_id} {message}
   - 插件相关 .plugins
 
-##### 插件开发和使用的有关内容可以在[这里](https://github.com/HarcicYang/HarcicQQBot/edit/main/plugin.md)找到
+##### 插件开发和使用的有关内容可以在[这里](https://github.com/HarcicYang/HarcicQQBot/blob/main/plugin.md)找到
