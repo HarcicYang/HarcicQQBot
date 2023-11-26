@@ -83,7 +83,7 @@ return return_()
 
 ### 配置插件到HarcicQQBot
 1. 找到HarcicQQBot的存在目录；
-2. 进入`bot_plugins`文件夹，把插件放进去（`.py`或`.pyc`文件）；
+2. 进入`.\_internal\bot_plugins\`，把插件放进去（`.py`或`.pyc`文件）；
 3. 编辑`bot_plugins`下的`__init__.py`:
   ~~~python
   from bot_plugins import plugin1
@@ -92,3 +92,10 @@ return return_()
 
   plugins = [plugin1, plugin2, ......]
   ~~~
+
+### 一部分常见问题
+1. `ModuleNotFoundError: No module named 'xxxx'`或`ImportError: cannot import name 'xxx' from 'xxxx.xx' (DX:\xx\xx\xx\xx\xx\x\xxx\__init__.pyc)`
+  解决方法：
+  1. 进入自己python的安装目录，进入`\Lib\site-packages\`；
+  2. 找到缺失的库文件夹并复制；
+  3. 把这个库文件夹复制到HarcicQQBot存在的目录下的`.\_internal\bot_plugins\`中；
