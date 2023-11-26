@@ -115,8 +115,7 @@ class Hypixel:  # 查询Hypixel玩家信息 https://api.hypixel.net/
     - .poe_claude
   - 设置Bot回复模式 .bot_chatting {0/1/2} {cmd(第一个参数为2时需要指定)}
   - 获取当前信息 .info
+  - 查询Hypixel玩家信息 .hypixel {PlayerName} （需要配置Hypixel API Key）
   - AI画图 .draw {prompt} (需要配置StabilityDrawAPI)
   - 发送群消息 .alert {group_id} {message}
   - 插件相关 .plugins
-
-##### 插件开发和使用的有关内容可以在[这里](https://github.com/HarcicYang/HarcicQQBot/blob/main/plugin.md)找到
