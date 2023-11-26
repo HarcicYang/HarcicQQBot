@@ -52,7 +52,7 @@ class Main:
     def process(self, message: str, isOwner: bool = False):
       # your codes here......
     def func(self, arg1, arg2 ......):
-      # you own functions
+      # your own functions
 ~~~
 如你所见，process方法需要传入两个参数：`message`和`isOwner`。
 其中：
