@@ -39,7 +39,7 @@ class Main:
 class Info:
     name = "" # 插件名称
     version = "" # 插件版本
-    author = "" #插件开发者
+    author = "" # 插件开发者
     desc = "" # 对插件的描述
     cmd = "" # 激活插件功能需要的命令（或关键词，建议包含"."）
     helps = "" # 插件的使用帮助信息
