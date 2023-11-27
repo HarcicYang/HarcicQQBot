@@ -5,7 +5,7 @@
 ### 基本功能：
 - AI 聊天：支持腾讯混元、讯飞星火等众多模型；
 - 入群欢迎
-- 插件系统 （尚在完善）
+- [插件系统](https://github.com/HarcicYang/HarcicQQBot/blob/main/plugin.md) （尚在完善）
 
 ## 使用
 该项目需要配合支持OneBot协议的QQ机器人框架，例如[Lagrange](https://github.com/LagrangeDev/Lagrange.Core)、[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)。
