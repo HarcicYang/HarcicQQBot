@@ -94,8 +94,8 @@ return return_()
   ~~~
 
 ### 一部分常见问题
-1. `ModuleNotFoundError: No module named 'xxxx'`或`ImportError: cannot import name 'xxx' from 'xxxx.xx' (DX:\xx\xx\xx\xx\xx\x\xxx\__init__.pyc)`
-  解决方法：
+ `ModuleNotFoundError: No module named 'xxxx'`或`ImportError: cannot import name 'xxx' from 'xxxx.xx' (DX:\xx\xx\xx\xx\xx\x\xxx\__init__.pyc)`
+ 解决方法：
   1. 进入自己python的安装目录，进入`\Lib\site-packages\`；
   2. 找到缺失的库文件夹并复制；
   3. 把这个库文件夹复制到HarcicQQBot存在的目录下的`.\_internal\bot_plugins\`中；
