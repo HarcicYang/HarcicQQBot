@@ -1,7 +1,7 @@
 # HarcicQQBot插件开发指南
 
 
-以下是一个示例插件（test_plugin.py）
+以下是一个示例插件（[`example_plugin1.py`](https://github.com/HarcicYang/HarcicQQBot/blob/main/example_plugin1.py)）
 ~~~python
 class Info:
     name = "Test Plugin"
