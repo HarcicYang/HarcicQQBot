@@ -133,3 +133,4 @@ class OpenKeyAPI:  # I am not supposed to tell you what's this
   - AI画图 .draw {prompt} (需要配置StabilityDrawAPI、Poe或####)
   - 发送群消息 .alert {group_id} {message}
   - 插件相关 .plugins
+  - 重载配置文件config.py .reload
