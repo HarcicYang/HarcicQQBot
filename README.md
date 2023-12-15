@@ -26,6 +26,8 @@ class General:
     filterList = []  # 当前被架空（悲
     default = "spark" # 默认聊天使用模型 hunyuan spark palm2 claude poe_gpt_3_5 poe_palm poe_llama poe_claude
     save_log = True # 是否保存日志
+    github_token = ""
+    github_username = ""
     # log_path = "" # 
     class Connection:
         type = "HTTP"  # ForwardWS HTTP , 仅使用OneBot协议时有效
