@@ -100,27 +100,36 @@ class Hypixel:  # 查询Hypixel玩家信息 https://api.hypixel.net/
     enabled = True
     key = ""
 
+class Qwen:  # 实时爬取的Qwen（Cookie可以用Cookie Editor插件导出为JSON）
+    desc = "Alibaba Qwen"
+    cookieFile = "./Qwen.json"
+    enabled = False
+
 class OpenKeyAPI:  # I am not supposed to tell you what's this
     desc = "OpenKeyAPI"
-    enabled = True
+    enabled = False
     key = ""
 ~~~
 
 ### 群内操作（命令系统）
 - 基本：
   - 与AI机器人聊天 .chat {message}
-  - 设置AI机器人聊天使用的模型
-    - .claude
-    - .palm2
-    - .spark
-    - .hunyuan
-    - .poe_gpt3.5
-    - .poe_palm
-    - .poe_llama
-    - .poe_claude
+  - 设置AI机器人聊天使用的模型 .mode {mode}
+      mode:
+        - gpt_free;
+        - claude;
+        - palm2;
+        - gemini;
+        - spark;
+        - hunyuan;
+        - qwen;
+        - baichuan;
+        - poe_helper;
+        - poe_gpt_3_5;
+        - poe_web_gpt;
   - 设置Bot回复模式 .bot_chatting {0/1/2} {cmd(第一个参数为2时需要指定)}
   - 获取当前信息 .info
   - 查询Hypixel玩家信息 .hypixel {PlayerName} （需要配置Hypixel API Key）
-  - AI画图 .draw {prompt} (需要配置StabilityDrawAPI)
+  - AI画图 .draw {prompt} (需要配置StabilityDrawAPI、Poe或####)
   - 发送群消息 .alert {group_id} {message}
   - 插件相关 .plugins
