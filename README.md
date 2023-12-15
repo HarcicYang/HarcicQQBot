@@ -10,11 +10,12 @@
 ## 使用
 该项目需要配合支持OneBot协议的QQ机器人框架，例如[Lagrange](https://github.com/LagrangeDev/Lagrange.Core)、[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)。
 
-### 配置文件 (config.py)
+### 配置文件 (config.py) (3.9以上版本)
 ~~~ python
 class data:  # 不要动
     repliedList = []
     enabledModuleList = []
+    blackList = []  # 哦这个可以动，把他qq号放进去他就用不了你的Bot了hh
 
 
 class General:
@@ -49,8 +50,8 @@ class OpenAIWeb:  # ChatGPT逆向工程API（因为Pyinstaller原因被架空 ht
     conversation_id = ""
 
 
-class Palm:  # Google Makersuite API （官方）
-    desc = "Palm2_API"
+class GoogleAI:  # Google AI Studio （官方） https://makersuite.google.com/
+    desc = "Google AI"
     enabled = False
     key = ""
 
@@ -99,6 +100,10 @@ class Hypixel:  # 查询Hypixel玩家信息 https://api.hypixel.net/
     enabled = True
     key = ""
 
+class OpenKeyAPI:  # I am not supposed to tell you what's this
+    desc = "OpenKeyAPI"
+    enabled = True
+    key = ""
 ~~~
 
 ### 群内操作（命令系统）
