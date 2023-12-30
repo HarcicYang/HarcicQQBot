@@ -209,6 +209,7 @@ class OpenKeyAPI:  # I am not supposed to tell you what's this
         - poe_helper;
         - poe_gpt_3_5;
         - poe_web_gpt;
+        - bing
   - 设置Bot回复模式 .bot_chatting {0/1/2} {cmd(第一个参数为2时需要指定)}
   - 获取当前信息 .info
   - 查询Hypixel玩家信息 .hypixel {PlayerName} （需要配置Hypixel API Key）
