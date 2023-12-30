@@ -10,7 +10,7 @@
 ## 使用
 该项目需要配合支持OneBot协议的QQ机器人框架，例如[Lagrange](https://github.com/LagrangeDev/Lagrange.Core)、[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)。
 
-### 配置文件 (config.py) (3.9以上版本)
+### 配置文件 (config.py) (4.0以下版本)
 ~~~ python
 class data:  # 不要动
     repliedList = []
@@ -111,6 +111,86 @@ class OpenKeyAPI:  # I am not supposed to tell you what's this
     desc = "OpenKeyAPI"
     enabled = False
     key = ""
+~~~
+
+### 配置文件 (config.py) (4.0以上版本，配置方式仍然参照config.py)
+~~~ json
+{
+  "Data": {
+    "blackList": []
+  },
+  "General": {
+    "BotQQ": 0,
+    "SelfQQ": [0],
+    "bot_chatting": "1",
+    "bot_chatting_cmd": "",
+    "github_token": "",
+    "github_username": "",
+    "default": "gemini",
+    "save_log": true,
+    "Connection": {
+      "type": "ForwardWS",
+      "host": "127.0.0.1",
+      "port": 5004,
+      "port_http": 5003,
+      "port_rev": 5002
+    }
+  },
+  "OpenAIOAPI": {
+    "enabled": false,
+    "key": ""
+  },
+  "OpenAIWeb": {
+    "enabled": false,
+    "email": "",
+    "password": "",
+    "conversation_id": ""
+  },
+  "GoogleAI": {
+    "enabled": true,
+    "key": ""
+  },
+  "Claude": {
+    "enabled": false,
+    "conversation_id": "",
+    "cookies": ""
+  },
+  "Spark": {
+    "enabled": true,
+    "cookie": "",
+    "fd": "",
+    "gttoken": "",
+    "chat_id": ""
+  },
+  "StabilityDrawAPI": {
+    "enabled": false,
+    "key": ""
+  },
+  "Poe": {
+    "enabled": false,
+    "cookie": ""
+  },
+  "HunYuan": {
+    "enabled": true,
+    "cookie": ""
+  },
+  "Baichuan": {
+    "enabled": true,
+    "key": "",
+    "cookie": ""
+  },
+  "Bing": {
+    "enabled": true
+  },
+  "Hypixel": {
+    "enabled": false,
+    "key": ""
+  },
+  "OpenKeyAPI": {
+    "enabled": false,
+    "key": ""
+  }
+}
 ~~~
 
 ### 群内操作（命令系统）
