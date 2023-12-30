@@ -113,7 +113,7 @@ class OpenKeyAPI:  # I am not supposed to tell you what's this
     key = ""
 ~~~
 
-### 配置文件 (config.py) (4.0以上版本，配置方式仍然参照config.py)
+### 配置文件 (config.json) (4.0以上版本，配置方式仍然参照config.py)
 ~~~ json
 {
   "Data": {
