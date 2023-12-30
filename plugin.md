@@ -120,14 +120,15 @@ class Plugin(PluginFramework.Base):
  - `self.name = "Test v2"` 插件名；
  - `self.api_version = "v2"` 插件API版本；
  - `self.cmd = ".tester"` 插件激活命令（可以为`None`）；
- - `self.helps = "Nothing is needed to be helped."` 插件帮助信息。
+ - `self.helps = "Nothing is needed to be helped."` 插件帮助信息；
+ - 当然，你可能有其他需要的变量。
 
 在操作Bot时，您可以使用`self.set.<action>()`方法：
  - `self.set.reply(message)` 回复消息；
  - `self.set.delete()` 撤回消息；
  - `self.set.mute(duration)` 禁言消息发送者；
  - `self.set.mute()` 解除消息发送者禁言；
- - `self.set.kick` 踢出消息发送者；
+ - `self.set.kick()` 踢出消息发送者；
 
 完成操作设置后，您应当`return 0`以通知HarcicQQBot“插件正常完成了处理”。如果操作中出现了意外错误，您可以使用`self.set.exception(message)`然后`return 1`，HarcicQQBot将进入错误处理进程。
 
