@@ -2,6 +2,9 @@
 适配OneBot协议的QQ机器人
 
 
+> 该项目不再维护。
+> 新仓库地址：https://github.com/HarcicYang/HypeR_Bot
+
 ### 基本功能：
 - AI 聊天：支持腾讯混元、讯飞星火等众多模型；
 - 入群欢迎
